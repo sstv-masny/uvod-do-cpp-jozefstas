@@ -1,10 +1,15 @@
 
 #include <iostream>
+using namespace std;
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    long long n;
-    if (!(std::cin >> n)) return 0;
+    int n;
+    cout << "in: " << endl;
+    cin >> n;
+    if (n % 2 == 0) {
+        cout << "out: even" << endl;
+    } else {
+        cout << "out: odd" << endl;
+    }
     // TODO: print "even" or "odd"
     return 0;
 }
